@@ -1,0 +1,61 @@
+@font-face{
+    font-family: Arvo;
+    src: url(https://www.canva.com/learn/best-professional-fonts-use-website/);
+}
+body
+{
+	font-family: Arvo,serif;
+	color: #F1F7ED ;
+	background-color: #7CA982;
+
+	margin-left: 175px;
+	margin-right: 175px;
+}
+
+header, footer
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+main
+{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+h1, h2, h3
+{
+	font-family: Arvo, serif;
+	text-align: center;
+	line-height: 0px;
+}
+
+a
+{
+	text-decoration: none;
+	color: #F1F7ED;
+	font-weight: bold;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #C2A83E;
+}
+
+figure
+{
+	text-align: center;
+}
+
+figcaption
+{
+	font-style: italic;
+}
+
+nav
+{
+	text-align: center;
+}
