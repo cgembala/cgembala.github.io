@@ -71,3 +71,7 @@ th, td
 	text-align: left;
 	vertical-align: middle;
 }
+thead,tfoot
+{
+	background-color: #243E36;
+}
