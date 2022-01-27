@@ -75,16 +75,16 @@ th, tfoot
 {
 	background-color: #243E36;
 }
-table
-{
-	margin-left:0;
+.center{
+	margin-left: auto;
+	margin-right: auto;
 }
 .button{
 	background-color: #243E36;
-	border:black;
+	border: black;
 }
 .checkbox{
-	width:100px;
-	display:inline-block;
+	width: 100px;
+	display: inline-block;
 }
 
