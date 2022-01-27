@@ -82,15 +82,15 @@ th, tfoot
 .buttons{
 	background-color: #243E36;
 	border: black;
-	color: #F1F7ED
+	color: #F1F7ED;
 }
 .dropdown{
-	background-color: #243E36;
-	color: #F1F7ED
+	background-color: #F1F7ED ;
+	color: #243E36 ;
 }
 .labelback{
-	background-color: #243E36;
-	color: #F1F7ED
+	background-color: #F1F7ED;
+	color: #243E36;
 }
 
 
