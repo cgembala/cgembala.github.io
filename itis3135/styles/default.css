@@ -75,3 +75,7 @@ th, tfoot
 {
 	background-color: #243E36;
 }
+table
+{
+	margin-left:auto;
+}
