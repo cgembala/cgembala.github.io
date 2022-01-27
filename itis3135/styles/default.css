@@ -83,7 +83,7 @@ th, tfoot
 	background-color: #243E36;
 	border: black;
 }
-.checkbox{
+.sameline{
 	width: 100px;
 	display: inline-block;
 }
