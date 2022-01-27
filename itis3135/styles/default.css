@@ -83,4 +83,8 @@ table
 	background-color: #243E36;
 	border:black;
 }
+.checkbox{
+	width:100px;
+	display:inline-block;
+}
 
