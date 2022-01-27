@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Camerron Gembala | ITIS3135 | Tables
+    </title>
+    <link href="styles/default.css" type="text/css" rel="stylesheet">
+    
+    <!-- link to style sheet here -->
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        Camerron Gembala | ITIS3135 | Cyan Gators 
+      </h1>
+      <nav>
+        <a href="index.html">Home</a>
+        ♢
+        <a href="introduction.html">Introduction</a>
+        ♢
+        <a href="contract.html">Contract</a>
+        ♢
+        <a href="tables.html">Table Sample</a>
+        ♢
+        <a href="forms.html">Forms Sample</a>
+        ♢
+        <a>Brand</a>
+        ♢
+        <a>Bad Design</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>
+        Forms
+      </h2>
+      <p>
+          Welcome to Gembala Consulting and Design. We are here to help you build your forever home!</p>
+          <figure>
+            <a href="gembalaconsulting.jpg">
+              <img src="images/gembalaconsutling.jpg" alt="Design">
+            </a>
+        <h2>
+            A few of the services we offer are:
+      </h2>
+        <u>
+            <li>Interior Design</li>
+            <li>Driveway Construction</li>
+            <li>Septic Install</li>
+            <li>Remodeling Consulting</li>
+        </u>
+        <p>For a free consultation and pricing please fill out the information below.</p>
+        <form name="myform" action="#">
+            <label for="first">First Name:</label><br>
+            <input type="text" id="first" name="first">
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" require="" placeholder="123-456-7890" name="phone">
+            <label for="eml">Email:</label><br>
+            <input type="email" id="eml" required=""  name="eml">
+
+        <p>Please slelect the type of work you are interested in:</p>
+            <input type="checkbox" id="Interior" name="Interior" value="Interior">
+            <label for="Interior"> Interior Design</label><br>
+            <input type="checkbox" id="Driveway" name="Driveway" value="Driveway">
+            <label for="Driveway"> Driveway Construction</label><br>
+            <input type="checkbox" id="Septic" name="Septic" value="Septic">
+            <label for="Septic"> Septic Install</label><br>
+            <input type="checkbox" id="Remodeling" name="Remodeling" value="Remodeling">
+            <label for="Remodeling"> Remodeling Consulting</label><br>
+
+        <p>What day works best for your consultation?</p>
+            <input type="radio" id="monday" name="day" value="Monday">
+            <label for="Monday">Monday</label><br>
+            <input type="radio" id="tuesday" name="day" value="Tuesday">
+            <label for="Tuesday">Tuesday</label><br>
+            <input type="radio" id="wednesday" name="day" value="Wednesday">
+            <label for="Wednesday">Wednesday</label><br>
+            <input type="radio" id="thursday" name="day" value="Thursday">
+            <label for="Thursday">Thursday</label><br>
+            <input type="radio" id="friday" name="day" value="Friday">
+            <label for="Friday">Friday</label><br>
+
+            <label for="contact">Chose how we contact you:</label> 
+            <select name="contact" id="contact">
+                <option value="phone">phone</option>
+                <option value="email">email</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form">
+            
+            <script>
+            function submitForm() {
+                $('form[name="myform"]').submit();
+                $('input[type="text"], textarea').val('');
+              }
+                </script>
+        </form>
+
+        
+      
+    </main>
+    <footer>
+        <br/>
+        <nav>
+          <a href="https://webpages.charlotte.edu/cgembala/" target="_blank">Charlotte.edu</a> ♢
+          <a href="https://github.com/cgembala" target="_blank">Github</a> ♢
+          <a href="https://cgembala.github.io/" target="_blank">Github.io</a> ♢
+          <a href="https://cgembala.github.io/itis3135/" target="_blank"> ITSC 3135 Github Pages</a> ♢
+          <a href="https://www.codecademy.com/profiles/cgembala" target="_blank">Codecademy</a> ♢
+          <a href="https://www.freecodecamp.org/cgembala" target="_blank">freeCodeCamp</a> ♢
+          <a href="https://jsfiddle.net/user/cgembala/" target="_blank">JSFiddle</a> ♢
+          <a href="https://www.linkedin.com/in/camerron-gembala-270185223/" target="_blank">LinkedIn</a>
+        </nav>
+        <br />
+      Created by Gembala Design LLC &copy;2022.
+    <p> 
+      <a href="https://validator.w3.org/check?uri=referer">
+        <img src="images/button_validation_html5.png" width="88" height="31" alt="Link to HTML validator">
+      </a>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="images/button_validation_css.gif" width="88" height="31" alt="Link to CSS validator">
+      </a>
+    </p>
+    </footer>
+
+
+  </body>
+
+</html>
