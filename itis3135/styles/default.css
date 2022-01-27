@@ -79,8 +79,3 @@ table
 {
 	margin-left:auto;
 }
-input[type=checkbox], input[type=radio] {
-	vertical-align: middle; 
-	position: relative;
-	bottom: .08em; 
-  }
