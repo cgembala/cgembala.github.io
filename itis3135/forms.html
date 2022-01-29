@@ -95,6 +95,8 @@
             <input class="buttons" type="reset" value="Reset Form">
             
             <script>
+            /* Found at https://stackoverflow.com/questions/14589193/clearing-my-form-inputs-after-submission*/
+            /* Used to reset form after submission*/
             function submitForm() {
                 $('form[name="myform"]').submit();
                 $('input[type="text"], textarea').val('');
