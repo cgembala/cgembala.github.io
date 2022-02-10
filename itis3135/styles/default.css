@@ -1,4 +1,4 @@
-/**
+
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 *{
 	font-family: Arvo;
@@ -102,11 +102,8 @@ tr:nth-child(odd)
 	background-color: #F1F7ED;
 	color: #243E36;
 }
-*/
 
-
-
-body
+main
 {
 	height: 100vh;
 	display: flex;
