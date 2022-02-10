@@ -11,14 +11,16 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
       img{border-radius:50%;position: relative;display:inline-block;margin-left:15px;margin-right: 15px;margin-top: auto;margin-bottom: auto;max-width:50px;max-height: 50px;vertical-align: middle;}
       body{color: #fcefe8;font-family: sans-serif;margin-left: 175px;margin-right: 175px;text-align: left;background-image: url(./images/try3.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;}
-      header,footer{font-family: Roboto,sans-serif;margin-top: 50px;margin-bottom: 50px; text-align: center;color:#D6CFCB;font-size: 20px;}
+      header,footer{font-family: Roboto,sans-serif;margin-top: 20px;margin-bottom: 20px; text-align: center;color:#D6CFCB;font-size: 20px;}
       h1,h2{text-align: center;line-height: 10px;font-family: Roboto,sans-serif;}
-      h3{text-align: left;line-height:30px;font-family: Roboto,sans-serif;}
+      h3{text-align: left;line-height:20px;}
       main{margin-left: 50px;margin-right: 50px;color:#fcefe8;font-size: 20px;}
       p{text-align: left;font-family: Roboto,sans-serif;color:#fcefe8;font-size: 20px;}
       ul{color:#fcefe8;font-size: 20px;font-family: Roboto,sans-serif}
       textarea{width:96%;height:90px;background-color: #706677 ;color: #D6CFCB ;padding: .4em;font: 20px;font-family: sans-serif; border: 2px;}
       form{text-align: left;}
+      label{font-family: Roboto,sans-serif;}
+      nav{font-family: Roboto,sans-serif;}
       .nav a{text-decoration: none;display: block;color: #fcefe8;font-weight: bold;font-size: 25px;text-align: left;font-family: Roboto,sans-serif;}
       .nav a:hover{color: #4dc0e4;}
       .nav a.active{color:#f7b910;}
@@ -31,29 +33,41 @@
       <h1>Gembala<a href="images/logo.jpg"><img src="images/logo.jpg" alt="GD Logo"></a>Design LLC</h1>
     </header>
     <div class="nav">
-        <a href="index.html" class="active">About Us</a>
-        <a href="quotes.html">Project Quote</a>
+      <a href="index.html" >About Us</a>
+      <a href="quotes.html"class="active">Project Quote</a>
     </div>
     <main>
      <h2>
-        <strong>About Us</strong>
-    </h2>
-      <p>Our company is dedicated to helping bring peoples designs and ideas to the world. In todays society if you are not online you lose a lot of reach for your products. We offer affordable and competitive pricing to help anyone with their projects. We give back to community by offering free htlm and coding classes once a month for anyone interested in learning.</p>
-        <h3>
-            <strong>A few of the services we offer are:</strong>
-      </h3>
-        <ul>
-            <li>Website Design</li>
-            <li>Consulting </li>
-            <li>Social Media Marketing</li>
-            <li>E-commerce setup</li>
-        </ul>
-        <p>We want to build the best for our clients and make them happy. We will always adhere to a strict time schedule and will only delay if the client wishes to change things after beginning.We have a 100% money back guarantee if we can not make your dreams come true for your website.</p>
-        <p>To contact us please use the information below:</p>
-        <p>308-764-4357</p>
-        <p>gembaladesign@gmail.com</p>
-        <p>3715 Independence Lane.</p>
-        <p>Park City,Utah</p>
+        <strong>Quote Info</strong>
+      </h2>
+     
+        <p>Fill out your information below and we will get back to you within 3 business days.</p>
+        <form action="#">
+            <label for="first">Name:</label>
+            <input class="labelback" type="text" id="first" name="first"><br>
+            <label for="phone">Phone Number:</label>
+            <input class="labelback" type="tel" id="phone"  placeholder="123-456-7890" name="phone"><br>
+            <label for="eml">Email:</label>
+            <input class="labelback" type="email" id="eml" required=""  name="eml"><br>
+        
+            <p>Provide us with a short explaination of your desired service:</p>
+            <textarea name="text" maxlength="250"></textarea><br>
+            
+            <input class="buttons" type="submit" value="Submit Form">
+            <input class="buttons" type="reset" value="Reset Form">
+            
+            <script>
+            function submitForm() 
+            {
+                $('form[name="myform"]').submit();
+                $('input[type="text"], textarea').val('');
+            }
+           
+                </script>
+        </form>
+
+        
+      
     </main>
     <footer>
        
