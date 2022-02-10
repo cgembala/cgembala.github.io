@@ -76,9 +76,9 @@ th, tfoot
 {
 	background-color: #243E36;
 }
-tbody tr :nth-child(odd)
+tr:nth-child(odd)
 {
-	background-color: #e0eec6
+	background-color: #C2A83E;
 }
 .center
 {
