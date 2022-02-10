@@ -31,6 +31,8 @@ h1, h2, h3
 	line-height: 5px;
 }
 
+
+
 a
 {
 	text-decoration: none;
@@ -73,6 +75,10 @@ th, td
 th, tfoot
 {
 	background-color: #243E36;
+}
+tbody tr :nth-child(odd)
+{
+	background-color: #e0eec6
 }
 .center
 {
