@@ -82,7 +82,7 @@ function sum(max)
   alert("The sum of the two random numbers is: " + sum);
 }
 
-function FtoC()
+function FahrenheittoCelsius()
 {
   var temp = prompt("Enter the temperature in Fahrenheit.");
   temp = parseFloat(temp);
@@ -92,7 +92,7 @@ function FtoC()
   alert("The temperature in Celsius is: " + newtemp);
 }
 
-function MtoK()
+function MilestoKilo()
 {
   var mile = prompt("Enter how many miles.");
   mile = parseFloat(mile);
