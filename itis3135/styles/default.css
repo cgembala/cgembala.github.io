@@ -103,39 +103,27 @@ tr:nth-child(odd)
 	color: #243E36;
 }
 
-main
-{
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 .datetime
 {
 	color: #fff;
 	background-color: black;
 	font-family: sans-serif;
-	width: 340px;
-	padding: 15px 10px;
+	width: 375px;
+	padding: 15px 15px 15px 15px;
 	border: 3px solid #2E9;
 	border-radius: 5px;
 	-webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
 	transition: .5s;
 	transition-property: background, box-shadow;
-
-}
-.datetime:hover
-{
-	background: #2E9;
-	box-shadow: 0 0 30px #2E9;
-}
-.datetime
-{
 	font-size: 20px;
 	font-weight: 600;
 	text-align: center;
 	letter-spacing: 3px;
+	margin-top: 5px;
+	
+
 }
+
 .time 
 {
 	font-size: 60px;
@@ -151,6 +139,7 @@ main
 	text-align: center;
 	letter-spacing: 3px;
 }
+
 .time span:last-child
 {
 	background: #2E9;
@@ -160,7 +149,14 @@ main
 	margin-top: 10px;
 	padding: 0 5px;
 	border-radius: 3px;
+}
 
-
-
+textarea
+{
+	width: 50%;
+	height: 50%;
+}
+.moreButtons
+{
+	margin-top: 10px;
 }
