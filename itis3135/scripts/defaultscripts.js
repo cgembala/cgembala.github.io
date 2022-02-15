@@ -46,7 +46,7 @@ function formSub()
 
 function userInfo(form) 
 {
-  var userName = form.userinfo.value;
+  var userName = form.name.value;
   var userFeel = form.text.value;
   alert("Hello " + userName + " we are glad you are feeling " + userFeel);
 }
