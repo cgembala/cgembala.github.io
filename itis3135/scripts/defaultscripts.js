@@ -11,21 +11,17 @@ function showTime()
     second = now.getSeconds(),
     period = "AM";
 
-  if (hour >= 12) 
-  {
+  if (hour >= 12) {
     period = "PM";
   }
-  if (hour == 0) 
-  {
+  if (hour == 0) {
     hour = 12;
   }
-  if (hour > 12) 
-  {
+  if (hour > 12) {
     hour = hour - 12;
   }
 
-  Number.prototype.pad = function(digits) 
-  {
+  Number.prototype.pad = function(digits) {
     for (var n = this.toString(); n.length < digits; n = 0 + n);
     return n;
   }
@@ -38,8 +34,7 @@ function showTime()
     document.getElementById(ids[i]).firstChild.nodeValue = values[i];
 }
 
-function initClock() 
-{
+function initClock() {
   showTime();
   window.setInterval("showTime()", 1);
 }
@@ -106,5 +101,3 @@ function MilestoKilo()
   let newmile = kilo.toFixed(2);
   alert("The distance in kilometers is: " + newmile);
 }
-
-  
