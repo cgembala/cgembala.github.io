@@ -19,6 +19,7 @@ function errorRetry()
 
 function validEntry() 
 {
+  sides = Math.round(Math.abs(sides));
   if (sides > 10 || sides <= 0) 
   {
     errorRetry();
