@@ -19,7 +19,7 @@ function errorRetry()
 
 function validEntry() 
 {
-  if (shape > 10 || shape <= 0) 
+  if (sides > 10 || sides <= 0) 
   {
     errorRetry();
   }
