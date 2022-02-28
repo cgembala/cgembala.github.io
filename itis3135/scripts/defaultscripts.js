@@ -101,3 +101,80 @@ function MilestoKilo()
   let newmile = kilo.toFixed(2);
   alert("The distance in kilometers is: " + newmile);
 }
+
+var employee =["Tony Stark","John Snow","Henry Smith","Luke Collins","Camerron Gembala"];
+var salary = [75000,32000,21000,56000,43000];
+
+window.onload = function () 
+{
+  document.getElementById("displayresults").onclick = displayResults;
+  document.getElementById("addsalary").onclick = addSalary;
+  document.getElementById("displaysalary").onclick = displaySalary;
+  document.getElementById("employee").focus;
+};
+
+function addSalary()
+{
+  var addEmployee = document.getElementById("employee").value;
+  var addSalary = document.getElementById("salary").value;
+
+  if (salary == "")
+  {
+    alert("Please enter a valid number");
+    addSalary = "";
+  }
+   else 
+   {
+     addSalary = parseInt(addSalary);
+      if(employee.includes(addEmployee)){
+       var index =  employee.indexOf(addEmployee);
+       salary[index] = addSalary;
+    }
+  
+  else
+  {
+    employee.push(addEmployee);
+    salary.push(addSalary);
+    
+  }
+  document.getElementById("salary").innerHTML = "";
+  document.getElementById("employee").focus();
+}
+
+}
+
+function displayResults()
+{
+  var highest = 0;
+  var sum = 0;
+  var person;
+ 
+
+  for (i = 0; i < salary.length-1; i++)
+  {
+    sum = sum + salary[i];
+  }
+  let average = (sum / salary.length).toFixed(2);
+
+  for (j=0; j<salary.length;j++)
+  {
+    if(salary[j]>highest)
+    {
+    highest = salary[j];
+    person = j;
+    }
+}
+  document.getElementById("result").innerHTML = "<h2>Result</h2>" + "<p>The average salary is " + average + "</p>" + "<p>The person with the highest salary was: " + employee[person] + "</p>"
+}
+
+function displaySalary()
+{
+  let table = "";
+  table += "<tr><th>Employee</th> <th>Salary</th></tr>"
+  for (i=0;i < salary.length;i++)
+  {
+    table += "<tr><td>" + employee[i] + "</td><td>" + salary[i] + " </td></tr>";
+  }
+  table+="</table>";
+  document.getElementById("result_table").innerHTML = "<h2>Salaries</h2>" + table;
+}

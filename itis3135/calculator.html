@@ -5,14 +5,14 @@
     <title>
       Camerron Gembala | ITIS3135 | Cyan Gators
     </title>
-    <script src="scripts/polygons.js"></script>
+    
     <link href="styles/default.css" type="text/css" rel="stylesheet">
     </head>
 
-  <body onload="getShape()">
+  <body>
     <header>
       <h1>
-        Camerron Gembala | ITIS3135 | Polygon Name
+        Camerron Gembala | ITIS3135 | Calculator
       </h1>
       <nav>
         <a href="index.html">Home</a>
@@ -34,18 +34,40 @@
         <a href="firstscripts.html">Scripts</a>
         ♢
         <a href="namethepolygon.html">Polygon</a>
-        ♢
-        <a href="calculator.html">Calculator</a>
-        ♢
-        <a href="calculator_try.html">calculator Try</a>
       </nav>
     </header>
 
   
   <main>
-      <h2>Polygon Name</h2>
+      <h2>Calculator</h2>
+        <div class="calculator">
+            <input type="text" class="calculator-screen" value=""disabled />
+        <div class="calculator-keys">
+            <button type="button" id="calc" class="operator" value="+">+</button>
+            <button type="button" id="calc" class="operator" value="-">-</button>
+            <button type="button" id="calc" class="operator" value="*">&times;</button>
+            <button type="button" id="calc" class="operator" value="/">&divide;</button>
 
-      
+            <button type="button" id="calc" value="7">7</button>
+            <button type="button" id="calc" value="8">8</button>
+            <button type="button" id="calc" value="9">9</button>
+
+            <button type="button" id="calc" value="4">4</button>
+            <button type="button" id="calc" value="5">5</button>
+            <button type="button" id="calc" value="6">6</button>
+
+            <button type="button" id="calc" value="1">1</button>
+            <button type="button" id="calc" value="2">2</button>
+            <button type="button" id="calc" value="3">3</button>
+
+            <button type="button" id="calc" value="0">0</button>
+            <button type="button" id="calc" class="decimal" value=".">.</button>
+            <button type="button"  class="all-clear" value="all-clear">A/C</button>
+            <button type="button"  class="equal-sign operator" value="=">=</button>
+
+        </div>       
+     </div>
+
       
 </main>
 <footer>
@@ -72,7 +94,7 @@
     </p>
     
     </footer>
-    
+    <script src="scripts/calculator_try.js"></script>
   </body>
   
 </html>

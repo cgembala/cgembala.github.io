@@ -5,14 +5,14 @@
     <title>
       Camerron Gembala | ITIS3135 | Cyan Gators
     </title>
-    <script src="scripts/polygons.js"></script>
+    <script src="scripts/defaultscripts.js"></script>
     <link href="styles/default.css" type="text/css" rel="stylesheet">
     </head>
 
-  <body onload="getShape()">
+  <body>
     <header>
       <h1>
-        Camerron Gembala | ITIS3135 | Polygon Name
+        Camerron Gembala | ITIS3135 | Arrays
       </h1>
       <nav>
         <a href="index.html">Home</a>
@@ -34,16 +34,30 @@
         <a href="firstscripts.html">Scripts</a>
         ♢
         <a href="namethepolygon.html">Polygon</a>
-        ♢
-        <a href="calculator.html">Calculator</a>
-        ♢
-        <a href="calculator_try.html">calculator Try</a>
       </nav>
     </header>
 
   
   <main>
-      <h2>Polygon Name</h2>
+      <h2>Arrays</h2>
+
+      <label for="employee">Employee Names:</label>
+      <select id="employee" name="employee">
+          <option value="Tony Stark">Tony Stark</option>
+          <option value="John Snow">John Snow</option>
+          <option value="Henry Smith">Henry Smith</option>
+          <option value="Luke Collins">Luke Collins</option>
+          <option value="Camerron Gembala">Camerron Gembala</option>
+      </select>
+      <label for="salary">Please enter the salary:</label>
+      <input type="number" id="salary" required="">
+      <input class="buttons" type="button" id="addsalary" value="Add Salaray">
+      <input class="buttons" type="button" id="displayresults" value="Display Results">
+      <input class="buttons" type="button" id="displaysalary" value="Display Salray">
+
+      <div id="result"></div>
+      <h3>Salary</h3>
+      <table id="result_table"></table>
 
       
       

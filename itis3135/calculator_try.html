@@ -5,14 +5,13 @@
     <title>
       Camerron Gembala | ITIS3135 | Cyan Gators
     </title>
-    <script src="scripts/polygons.js"></script>
+    <script src="scripts/calculator_try.js"></script>
     <link href="styles/default.css" type="text/css" rel="stylesheet">
-    </head>
 
-  <body onload="getShape()">
+  <body>
     <header>
       <h1>
-        Camerron Gembala | ITIS3135 | Polygon Name
+        Camerron Gembala | ITIS3135 | Calculator
       </h1>
       <nav>
         <a href="index.html">Home</a>
@@ -34,19 +33,43 @@
         <a href="firstscripts.html">Scripts</a>
         ♢
         <a href="namethepolygon.html">Polygon</a>
-        ♢
-        <a href="calculator.html">Calculator</a>
-        ♢
-        <a href="calculator_try.html">calculator Try</a>
       </nav>
     </header>
 
   
   <main>
-      <h2>Polygon Name</h2>
-
-      
-      
+      <h2>Calculator Try</h2>
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="calc"/></td>
+                <td><input type="button" value="A/C" onclick="reset()"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="dis('1')"/></td>
+                <td><input type="button" value="2" onclick="dis('2')"/></td>
+                <td><input type="button" value="3" onclick="dis('3')"/></td>
+                <td><input type="button" value="/" onclick="dis('/')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="dis('4')"/></td>
+                <td><input type="button" value="5" onclick="dis('5')"/></td>
+                <td><input type="button" value="6" onclick="dis('6')"/></td>
+                <td><input type="button" value="-" onclick="dis('-')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="dis('7')"/></td>
+                <td><input type="button" value="8" onclick="dis('8')"/></td>
+                <td><input type="button" value="9" onclick="dis('9')"/></td>
+                <td><input type="button" value="+" onclick="dis('+')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="dis('.')"/></td>
+                <td><input type="button" value="0" onclick="dis('0')"/></td>
+                <td><input type="button" value="=" onclick="solve()"/></td>
+                <td><input type="button" value="*" onclick="dis('*')"/></td>
+                
+            </tr>
+        </table>
 </main>
 <footer>
         <br/>
