@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preload" href="images/background.jpg" as="image"/>
+    <title>
+      Queen City Planners 
+    </title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    .logo{position: relative;display:inline-block;margin-left:15px;margin-right: 15px;margin-top: auto;margin-bottom: auto;max-width:250px;max-height: 250px;vertical-align: middle;}
+      body{color: white;font-family: sans-serif;margin-left: 175px;margin-right: 175px;text-align: left;background-image: url(./images/background2.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;}
+      header{font-family: Roboto,sans-serif;margin-top: 20px;margin-bottom: 20px; text-align: center;color:#D6CFCB;font-size: 20px;}
+      h1,h2{text-align: center;line-height: 10px;font-family: Dancing Script,sans-serif;}
+      h3{text-align: left;line-height:20px;}
+      main{margin-left: 50px;margin-right: 50px;color:white;font-size: 20px;}
+      p{text-align: left;font-family: Roboto,sans-serif;color:white;font-size: 20px;}
+      ul{color:white;font-size: 20px;font-family: Roboto,sans-serif}
+      textarea{width:96%;height:90px;background-color: #706677 ;color: #D6CFCB ;padding: .4em;font: 20px;font-family: sans-serif; border: 2px;}
+      form{text-align: left;}
+      label{font-family: Roboto,sans-serif;}
+      nav{font-family: Roboto,sans-serif;}
+      .nav a{text-decoration: none;display: block;color: white;font-weight: bold;font-size: 25px;text-align: right;font-family: Roboto,sans-serif;}
+      .nav a:hover{color: #4dc0e4;}
+      .nav a.active{color:#f7b910;}
+      .box{width: 600px;border: 10px solid black;padding: 50px;margin: 20px;background-color: rgba(0,0,0,.5);}
+      footer{margin-top: 50px; margin-bottom: 50px; text-align: center;}
+      .right {width: 15%;position: absolute;right: 0px;height: 100%;}
+    </style>
+    
+  </head>
+
+  <body>
+    <header>
+        <h1><a href="images/project.jpg"><img src="images/project.jpg" class="logo" alt="GD Logo"></a></h1>
+    </header>
+    <div class="nav">
+      <a href="index.html" >About Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <a href="services.html">Services</a>
+      <a href="team.html">Team</a>
+    </div>
+    <main>
+      <div class="box">
+      <h2>
+        <strong>Event Request</strong>
+      </h2>
+        
+        <p>Fill out your information below and we will get back to you within 3 business days.</p>
+        <form action="#">
+            <label for="first">Name:</label>
+            <input class="labelback" type="text" id="first" name="first"><br>
+            <label for="phone">Phone Number:</label>
+            <input class="labelback" type="tel" id="phone"  placeholder="123-456-7890" name="phone"><br>
+            <label for="eml">Email:</label>
+            <input class="labelback" type="email" id="eml" required=""  name="eml"><br>
+
+            <label  for="event">Chose what kind of event you are interested in:</label> 
+            <select name="event" id="event">
+                <option class="dropdown" value="wedding">Wedding</option>
+                <option class="dropdown" value="corporate">Corporate</option>
+                <option class="dropdown" value="social">Social Gathering</option>
+            </select>
+        
+            <p>Provide us with a short explaination of your desired event:</p>
+            <textarea name="text" maxlength="250"></textarea><br>
+            
+            <input class="buttons" type="submit" value="Submit Form">
+            <input class="buttons" type="reset" value="Reset Form">
+            
+            <script>
+            function submitForm() 
+            {
+                $('form[name="myform"]').submit();
+                $('input[type="text"], textarea').val('');
+            }
+           
+                </script>
+        </form>
+
+        </div>
+      
+    </main>
+    <footer>
+      Created by <a href="gembaladesign.com/index.html">Gembala LLC &copy;2022.</a>
+      
+    </footer>
+
+
+  </body>
+
+</html>
