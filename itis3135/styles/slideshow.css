@@ -69,19 +69,19 @@ nav
     position: relative;
   }
   
-  /* Hide the images by default */
+ 
   .mySlides 
   {
     display: none;
   }
   
-  /* Add a pointer when hovering over the thumbnail images */
+  
   .cursor 
   {
     cursor: pointer;
   }
   
-  /* Next & previous buttons */
+  
   .prev,.next 
   {
     cursor: pointer;
@@ -98,7 +98,7 @@ nav
     -webkit-user-select: none;
   }
   
-  /* Position the "next button" to the right */
+
   .next 
   {
     right: 0;
@@ -121,7 +121,7 @@ nav
     top: 0;
   }
   
-  /* Container for image text */
+  
   .caption-container 
   {
     text-align: center;
@@ -137,14 +137,14 @@ nav
     clear: both;
   }
   
-  /* Six columns side by side */
+  
   .column 
   {
     float: left;
     width: 16.66%;
   }
   
-  /* Add a transparency effect for thumnbail images */
+ 
   .demo 
   {
     opacity: 0.6;
