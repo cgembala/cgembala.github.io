@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.logo
+{
+    position: relative;
+    display:inline-block;
+    margin-left:15px;
+    margin-right: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width:250px;
+    max-height: 250px;
+    vertical-align: middle;
+}
+  body
+  {
+      color: white;
+      font-family: sans-serif;
+      margin-left: 175px;
+      margin-right: 175px;
+      text-align: left;
+      background-image: url(../images/background2.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+a
+{
+    color:#F1F7ED
+}
+  header
+  {
+      font-family: Roboto,sans-serif;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      color:#F1F7ED;
+      font-size: 20px;
+    }
+  h1,h2
+  {
+      text-align: center;
+      line-height: 10px;
+      font-family: Dancing Script,sans-serif;
+    }
+  h3
+  {
+      text-align: left;
+      line-height:20px;
+    }
+  main
+  {
+      margin-left: 50px;
+      margin-right: 50px;
+      color:#F1F7ED;
+      font-size: 20px;
+    }
+  p
+  {
+      text-align: left;
+      font-family: Roboto,sans-serif;
+      color:#F1F7ED;
+      font-size: 20px;
+    }
+  ul.home
+  {
+      color:#F1F7ED;
+      font-size: 20px;
+      font-family: Roboto,sans-serif;
+    }
+  nav
+  {
+      font-family: Roboto,sans-serif;
+      text-align: left;
+      text-decoration: none;
+    }
+  
+  .box
+  {
+      width: 650px;
+      border: 10px solid black;
+      padding: 50px;
+      margin: 20px;
+      background-color: rgba(0,0,0,.5);}
+  footer
+  {
+      margin-top: 50px; 
+      margin-bottom: 50px; 
+      text-align: center;
+    }
+.right
+{
+    width: 15%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+}
+td,th
+{
+    border: 1px solid black;
+    padding: 8px;
+    background-color: rgba(0,0,0,.5);
+    color:#F1F7ED;
+    text-align: left;
+}
+th
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: rgba(0,0,0,.5);
+    color:#F1F7ED;
+}
+table.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.picture
+{
+    width: 100px;
+    height: 75px;
+}
+figure
+{
+    display: inline-block;
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.5);
+  }
+  
+  .nav li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #F1F7ED;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  .slideshow-box 
+{
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides 
+  {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor 
+  {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,.next 
+  {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next 
+  {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+ 
+  .prev:hover,.next:hover 
+  {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  .numbertext 
+  {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container 
+  {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after 
+  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column 
+  {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo 
+  {
+    opacity: 0.6;
+  }
+  
+  .active,.demo:hover 
+  {
+    opacity: 1;
+  }
