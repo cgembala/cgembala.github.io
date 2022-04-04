@@ -1,32 +1,29 @@
-$(document).ready(function() {
-
-
-    // preload the image for each link
-$("#image_list a").each(function ()
+$(document).ready(function ()
 {
-    var swapPicture = new Picture();
-    swapPicture.src = $ (this).attr("href");
-});
-    // set up the event handlers for each link
-$("#image_list a").click(function (evt)
-{
-    var picture = $ (this).attr("href");
-
-    $("#image").attr("src", picture);
-    var caption = $ (this).attr("title");
-    $("#caption").fadeOut(1000, function ()
+    // preload images
+    $("#image_list a").each(function ()
     {
-        $("#caption").text(caption).fadeIn(1000);
+        var swappedImage = new Image();
+        swappedImage.src = $(this).attr("href");
     });
-    $("#image").fadeOut(1000, function ()
+
+    // set up event handlers for links  
+    $("#image_list a").click(function (evt)
     {
-        $("#image").attr("src", picture).fadeIn(1000);
-    });
-        // cancel the default action of each link
-
-    evt.preventDefault();
-});
-// move the focus to the first link
-$("li:first-child a").focus();
-
+        var imageURL = $(this).attr("href");
+        $("#image").attr("src", imageURL);
+        var caption = $(this).attr("title");
+        $("#caption").fadeOut(1000, function ()
+        {
+            $("#caption").text(caption).fadeIn(1000);
+        });
+        $("#image").fadeOut(1000, function ()
+        {
+            $("#image").attr("src", imageURL).fadeIn(1000);
+        });
+        // cancel the default action of the link
+        evt.preventDefault();
+    }); 
+    // move focus to first thumbnail
+    $("li:first-child a").focus();
 }); // end ready
