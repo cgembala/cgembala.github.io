@@ -8,6 +8,11 @@
       Queen City Planners 
     </title>
     <link href="styles/default.css" type="text/css" rel="stylesheet">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="./scripts/project.js"></script>
   </head>
 
   <body>
@@ -42,6 +47,8 @@
                 <option class="dropdown" value="corporate">Corporate</option>
                 <option class="dropdown" value="social">Social Gathering</option>
             </select>
+
+            <p>Date: <input type="text" id="datepicker"></p>
         
             <p>Provide us with a short explaination of your desired event:</p>
             <textarea name="text" maxlength="250"></textarea><br>
@@ -49,14 +56,7 @@
             <input class="buttons" type="submit" value="Submit Form">
             <input class="buttons" type="reset" value="Reset Form">
             
-            <script>
-            function submitForm() 
-            {
-                $('form[name="myform"]').submit();
-                $('input[type="text"], textarea').val('');
-            }
-           
-                </script>
+            
         </form>
 
         </div>
@@ -64,6 +64,8 @@
     </main>
     <footer>
       Created by <a href="gembaladesign.com/index.html">Gembala LLC &copy;2022.</a>
+      </footer>
+      
   </body>
 
 </html>

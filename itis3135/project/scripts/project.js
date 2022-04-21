@@ -27,3 +27,17 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+$(document).ready(function() {
+function submitForm() 
+            {
+                $('form[name="myform"]').submit();
+                $('input[type="text"], textarea').val('');
+            }
+          });
+$(document).ready(function() 
+{
+$( function ()
+{
+  $("#datepicker").datepicker();
+});
+});
