@@ -12,20 +12,19 @@
          rel = "stylesheet">
     <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script src="./scripts/project.js"></script>
+    <script type="text/javascript" src="scripts/datepicker.js"></script>
+
+    <script>
+    function submitForm() 
+      {
+          $('form[name="myform"]').submit();
+          $('input[type="text"], textarea').val('');
+      }</script>
   </head>
 
   <body>
-    <header>
-        <h1><a href="images/project.jpg"><img src="images/project.jpg" class="logo" alt="GD Logo"></a></h1>
-    </header>
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="contact.html" class="active">Contact Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="gallery.html" >Gallery</a></li>
-    </ul>
+      <div data-include="components/header.html"></div>
+  
     <main>
       <div class="box">
       <h2>
@@ -62,10 +61,10 @@
         </div>
       
     </main>
-    <footer>
-      Created by <a href="gembaladesign.com/index.html">Gembala LLC &copy;2022.</a>
-      </footer>
+    
+      <div data-include="components/footer.html"></div>
       
+      <script src="scripts/dynamic_include.js"   ></script>
   </body>
 
 </html>
