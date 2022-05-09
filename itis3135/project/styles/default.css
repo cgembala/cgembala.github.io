@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap');
 .logo
 {
     position: relative;
@@ -14,7 +15,7 @@
   body
   {
       color: white;
-      font-family: sans-serif;
+      font-family:Radio Canada, sans-serif;
       margin-left: 175px;
       margin-right: 175px;
       text-align: left;
@@ -29,7 +30,7 @@ a
 }
   header
   {
-      font-family: Roboto,sans-serif;
+      font-family: Radio Canada,sans-serif;
       margin-top: 20px;
       margin-bottom: 20px;
       text-align: center;
@@ -57,7 +58,7 @@ a
   p
   {
       text-align: left;
-      font-family: Roboto,sans-serif;
+      font-family: Radio Canada,sans-serif;
       color:#F1F7ED;
       font-size: 20px;
     }
@@ -65,11 +66,11 @@ a
   {
       color:#F1F7ED;
       font-size: 20px;
-      font-family: Roboto,sans-serif;
+      font-family: Radio Canada,sans-serif;
     }
   nav
   {
-      font-family: Roboto,sans-serif;
+      font-family: Radio Canada,sans-serif;
       text-align: left;
       text-decoration: none;
     }
@@ -160,19 +161,19 @@ figure
     position: relative;
   }
   
-  /* Hide the images by default */
+ 
   .mySlides 
   {
     display: none;
   }
   
-  /* Add a pointer when hovering over the thumbnail images */
+ 
   .cursor 
   {
     cursor: pointer;
   }
   
-  /* Next & previous buttons */
+
   .prev,.next 
   {
     cursor: pointer;
@@ -189,7 +190,7 @@ figure
     -webkit-user-select: none;
   }
   
-  /* Position the "next button" to the right */
+  
   .next 
   {
     right: 0;
@@ -212,7 +213,7 @@ figure
     top: 0;
   }
   
-  /* Container for image text */
+ 
   .caption-container 
   {
     text-align: center;
@@ -228,14 +229,13 @@ figure
     clear: both;
   }
   
-  /* Six columns side by side */
+  
   .column 
   {
     float: left;
     width: 16.66%;
   }
-  
-  /* Add a transparency effect for thumnbail images */
+
   .demo 
   {
     opacity: 0.6;
